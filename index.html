@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diptyque_banner.html</title>
+    <!-- web font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* 배너규격 700x400px */
+        * { margin: 0; padding: 0;}
+        a { text-decoration: none;}
+        body { 
+            font-family: 'Noto Serif KR', serif;
+        }
+
+        .banner { 
+            /* background-color: blanchedalmond; */
+            width: 700px; height: 400px;
+            position: relative;
+        }
+
+        .banner > video {
+            position: absolute;
+        }
+
+        .banner > .img {
+            position: absolute;
+            left: 20px; bottom: 20px;
+            animation-name: prod;
+            animation-duration: 23s;
+            animation-iteration-count: infinite;
+        }
+
+        .banner > .img > .prod {
+            width: 94px; height: 159px;
+        }
+
+     
+        .banner > section, p, a {
+            position: relative;
+            color: white;
+        }
+
+        .banner > section > p {
+            font-size: 28px;
+            letter-spacing: 2px;
+            font-weight: 200;
+        }
+
+        .banner > p, .go {
+            font-size: 18px;
+            letter-spacing: 2px;
+            font-weight: 200;
+        }
+
+        .banner > .go2 { 
+            font-size: 24px;
+            font-weight: 700;
+            color: black;
+        }
+
+        /* section text*/
+
+        .banner > section > p:nth-child(1) { 
+            position: absolute;
+            left: 295px; top: 185px;
+            color: rgb(136, 48, 136);
+            font-weight: 400;
+            /* display: none; */
+            animation-name: iris;
+            animation-duration: 24s ;
+            animation-iteration-count: infinite;
+            /* animation-delay: 1s; */
+        }
+
+        @keyframes iris {
+            0%{opacity: 0;}
+            20%{opacity: 1;}
+            40%{opacity: 0;}
+            60%{opacity: 0;}
+            80%{opacity: 0;}
+            100%{opacity: 0;}
+            
+        }
+
+        .banner > section > p:nth-child(2) { 
+            position: absolute;
+            left: 295px; top: 185px;
+            color: tomato;
+            font-weight: 400;
+            /* display: none; */
+            animation-name: tub;
+            animation-duration: 24s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes tub {
+            0%{opacity: 0;}
+            20%{opacity: 0;}
+            40%{opacity: 1;}
+            60%{opacity: 0;}
+            80%{opacity: 0;}
+            100%{opacity: 0;}
+            
+        }
+        .banner > section > p:nth-child(3) { 
+            position: absolute;
+            left: 245px; top: 185px;
+            color: maroon;
+            font-weight: 400;
+            /* display: none; */
+            animation-name: pink;
+            animation-duration: 24s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes pink {
+            0%{opacity: 0;}
+            20%{opacity: 0;}
+            40%{opacity: 0;}
+            60%{opacity: 1;}
+            80%{opacity: 0;}
+            100%{opacity: 0;}
+            
+        }
+
+        .banner > section > p:nth-child(4) { 
+            position: absolute;
+            left: 310px; top: 185px;
+            color: mintcream;
+            font-weight: 400;
+            /* display: none; */
+            animation-name: musk;
+            animation-duration: 24s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes musk {
+            0%{opacity: 0;}
+            20%{opacity: 0;}
+            40%{opacity: 0;}
+            60%{opacity: 0;}
+            80%{opacity: 1;}
+            100%{opacity: 0;}
+            
+        }
+
+        /* 앵커 태그 */
+        .banner > p {
+            position: absolute;
+            left: 134px; top: 310px;
+            text-shadow: 2px 2px 3px black;
+            animation-name: prod;
+            animation-duration: 23s;
+            animation-iteration-count: infinite;
+        }
+
+        .banner > .go {
+            position: absolute;
+            left: 134px; top: 333px;
+            text-shadow: 2px 2px 3px black;
+            animation-name: prod2;
+            animation-duration: 23s;
+            animation-iteration-count: infinite;
+        }
+
+        .banner > .go2 {
+            position: absolute;
+            left: 90px; top: 224px;
+            /* display: none; */
+            animation-name: goto;
+            animation-duration: 24s;
+            animation-iteration-count: infinite;
+        }
+
+        .banner > .go2:hover { 
+            color: rgb(109, 226, 247);
+        }
+
+        @keyframes goto {
+            0%{opacity: 0;}
+            80%{opacity: 0;}
+            85%{opacity: 1;}
+            98%{opacity: 1;}
+            100%{opacity: 1;}
+        }
+
+        @keyframes prod {
+            0%{ opacity: 0;}
+            15%{opacity: 0;}
+            40%{opacity: 1;}
+            60%{opacity: 1;}
+            100%{opacity: 0;}
+        }
+
+        @keyframes prod2 {
+            0%{ opacity: 0; color: rgb(109, 226, 247);}
+            15% {opacity: 0; color: white;} 
+            40%{opacity: 1; color: rgb(109, 226, 247);}
+            60%{opacity: 1; color: white;}
+            80%{color: rgb(109, 226, 247);}
+            100%{opacity: 0; color: white; }
+        }
+
+    </style>
+</head>
+<body>
+    <div href="#" class="banner">
+        <video src="./video/dip.mp4"
+        autoplay
+        loop
+        muted></video>
+        <section>
+            <p class="iris">아이리스</p>
+            <p class="tub">튜베로즈</p>
+            <p class="pink">핑크페퍼&로즈</p>
+            <p class="mu">머스크</p>
+        </section>
+        <p>딥티크 도손</p>
+        <a class="img" href="#">
+            <img src="./video/product.png" class="prod" alt="">
+        </a>
+        <a href="#" class="go">체험 샘플 신청하기</a>
+        <a href="#" class="go2">지금 바로 가기</a>
+    </div>
+    <script>
+        var prod = document.querySelector('.img .prod');
+        prod.addEventListener('mouseover', function(){
+            prod.style.width = '105px'
+            prod.style.height = '178px'
+        });
+        prod.addEventListener('mouseout', function(){
+            prod.style.width = '94px'
+            prod.style.height = '159px'
+        });
+    </script>
+</body>
+</html>
